@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+          body {
+            font: normal 20pt Arial;
+        }
+        input {
+            font: normal 14pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual é a sua Nacionalidade!</h1>
+    De qual pais voçê é <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" onclick="ver()">
+    <div id = "res"></div>
+
+    <script>
+        function ver() {
+            var txtp = window.document.querySelector('input#txtpais')
+            var res = window.document.querySelector('div#res')
+            var pais = txtp.value
+            
+            res.innerHTML = `<p> Voçê vem do pais ${pais} !`
+                if (pais == 'brasil' || 'Brasil') {
+                    res.innerHTML += `<p>Voçê é <strong>Brasileiro</strong>`
+                } else {
+                    res.innerHTML += `<p>Voçê é <strong>Estrangeiro</strong>`
+                } 
+
+            res.innerHTML += `<p>Seja Bem-Vindo(a)!</p>`    
+        }
+    </script>
+</body>
+</html>
