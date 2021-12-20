@@ -1,0 +1,40 @@
+body {
+    background: rgb(85, 105, 218);
+    font: normal 15pt Arial;
+    margin-top: 3cm;
+
+}
+
+header {
+    color: black;
+    text-align: left;
+    
+}
+
+section {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: 1cm;
+    box-shadow: 3px 3px 10px black;
+    font: 15pt arial;
+}
+input {
+    font: 12pt arial;
+    width: 100px;
+}
+
+div {
+    text-align: center;
+}
+
+div {
+    margin-top: 10mm;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Medidas</h1>
+
+    </header>
+    <section>
+        
+       <div>
+            <p>Tipo de conversão: 
+                <input type="text" value="comprimento">
+            </p>
+            
+            <input type="number" name="txtmedida" id="txtmedida" min="0"> 
+            <input type="button" value="Converter" onclick="converter1()">
+            <p>Unidade:
+                <input type="radio" name="raduni" id="metros" checked>
+                <label for="metros">m</label>
+                <input type="radio" name="raduni" id="mm">
+                <label for="mm">mm</label>
+            </p>
+            <p>
+                <input type="radio" name="raduni" id="km" >
+                <label for="km">km</label>
+                <input type="radio" name="raduni" id="cm">
+                <label for="cm">Cm</label>
+            </p>
+        </div>
+        <div id = "res">
+            Preencha a cima com o valor qua deseja converter!
+        </div>
+    </section>
+    <section>
+        <div>
+            <p>Tipo de conversão: 
+                <input type="text" value="velocidade">
+            </p>
+            
+            <input type="number" name="txtmedida" id="txtmedida" min="0"> 
+            <input type="button" value="Converter" onclick="converter2()">
+            <p>Unidade:
+                <input type="radio" name="raduni" id="metros" checked>
+                <label for="metros">m</label>
+                <input type="radio" name="raduni" id="mm">
+                <label for="mm">mm</label>
+            </p>
+           
+        </div>
+        <div id = "res">
+            Preencha a cima com o valor qua deseja converter!
+        </div>
+    </section>
+    <footer>
+        <p></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
