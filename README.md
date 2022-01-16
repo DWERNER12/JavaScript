@@ -1,2 +1,3 @@
 # JavaScript
-Estudos e Projetos!
+
+Repositório de estudos em JavaScript!
